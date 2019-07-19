@@ -11,6 +11,7 @@ import { OperationsComponent } from './user/admin/operations/operations.componen
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './user/admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { ClientComponent } from './user/client/client.component';
 
 
 const routes: Routes = [
@@ -21,26 +22,22 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent,   
   
   children:[
-
     { path: 'add', component: AddUserComponent },
     { path: ':id', component: UserByIdComponent}, 
     { path: 'edit/:id', component: EditUserComponent},
     { path: 'op/:id', component: OperationsComponent},
     { path: 'users', component: UsersListComponent},
-  
-
   ],
 
-},
+  },
 
- 
+  {path: 'client', component: ClientComponent },
+  {path:'client/create', component: ClientComponent},
 ], 
 
  }, 
 
  { path:'login', component: LoginComponent}
-
- 
 ];
 
 @NgModule({

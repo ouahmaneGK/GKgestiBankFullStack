@@ -1,0 +1,24 @@
+<p>
+  client works!
+</p>
+
+
+<div class="col-md-6">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Prénom</th>
+    <th>Nom</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let client of clients">
+          <td>{{client.prenom}}</td>
+          <td>{{client.nom}}</td>
+          <td><button class="btn btn-danger" (click)="deleteClient(client)"> Supprimer</button></td>
+          <td><button class="btn btn-danger" (click)="editClient(client)"> Voir le détail</button></td>
+          </tr>
+  </tbody>
+    </table>
+
+  </div>

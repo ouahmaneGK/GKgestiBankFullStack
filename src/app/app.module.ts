@@ -22,6 +22,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { RequetesComponent } from './requetes/requetes.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { UserComponent } from './user/user.component';
+import { ClientComponent } from './user/client/client.component';
+import { ListeClientsComponent } from './user/client/liste-clients/liste-clients.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { UserComponent } from './user/user.component';
     NotificationsComponent,
     RequetesComponent,
     TransactionsComponent,
-    UserComponent
+    UserComponent,
+    ClientComponent,
+    ListeClientsComponent
   ],
   imports: [
     BrowserModule,
